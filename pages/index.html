@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Page Title</title>
+        <style>
+        html {
+	background-color: black;
+}
+.team {
+	font-family: "Google Sans", Roboto, Arial, sans-seif;
+	background-color: #212121;
+	padding: 5px;
+	border-radius: 3px;
+	animation: side 4s;
+	animation-fill-mode: forwards;
+}
+@keyframes side {
+	0% {
+		width: 100%;
+	}
+	25% {
+		width: 45%;
+	}
+	100% {
+		width: 45%;
+	}
+}
+.tabs {
+	width: 99.5%;
+	margin-top: 10px;
+	display: grid;
+	grid-template-columns: auto auto;
+	color: white;
+}
+/* HEADER */
+.team .header b {
+	font-size: 40px;
+}
+.team .header {
+	background-image: url("https://images.unsplash.com/photo-1653287606739-087b7e6a0843?crop=entropy&cs=tinysrgb&fm=jpg&ixid=MnwzMjM4NDZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE2NTM1ODM3NTc&ixlib=rb-1.2.1&q=80");
+	background-repeat: no-repeat;
+	background-size: 100%;
+	overflow: scroll;
+	height: 85px;
+	font-size: 25px;
+	color: white;
+	text-align: center;
+	border-radius: 5px;
+}
+/* TABS */
+.team .tabs span {
+	width: 100%;
+	height: 250px;
+	border: 1px solid darkgrey;
+	text-transform: uppercase;
+	text-align: center;
+	font-weight: bold;
+	border-radius: 3px;
+	animation: tab 2s;
+	animation-fill-mode: forwards;
+}
+@keyframes tab {
+	0% {
+		height: 250px;
+	}
+	50% {
+		height: 100px;
+	}
+    100% {
+    	height: 100px;
+    }
+}
+p {
+	color: white;
+}
+
+        </style>
+	</head>
+	<body>
+
+<div class="team">
+	<div class="header">
+		<b>Name</b>
+		<br>
+		Description
+	</div>
+	<div class="tabs">
+		<span>Tab</span>
+		<span>Tab</span>
+	</div>
+</div>
+<p>Heh. I'm some usless text.</p>
+
+	</body>
+</html>
